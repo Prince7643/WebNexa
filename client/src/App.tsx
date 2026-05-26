@@ -8,7 +8,7 @@ import Community from './pages/Community'
 import View from './pages/View'
 import Navbar from './components/Navbar'
 import AuthPage from './pages/auth/AuthPage'
-import { toast, Toaster } from "sonner";
+import { Toaster } from "sonner";
 import Setting from './pages/Setting'
 import Loading from './pages/Loading'
 const App = () => {

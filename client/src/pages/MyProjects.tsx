@@ -28,7 +28,7 @@ const MyProjects = () => {
         try {
             const confirm = window.confirm('Are you sure you want to delete this projec?')
             if (!confirm) return;
-            const { data } = await api.post(`/api/project/${projectId}`)
+            await api.post(`/api/project/${projectId}`)
             setloading(false)
         } catch (error) {
             console.log(error)

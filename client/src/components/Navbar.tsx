@@ -6,7 +6,6 @@ import api from '../configs/axios'
 import { toast } from 'sonner'
 const Navbar = () => {
     const Navigate=useNavigate()
-    const [menuOpen,setMenuOpen]=React.useState(false)
     const {data:session}=authClient.useSession()
     const [credits,setCredits]=React.useState(0)
     const getCreadits =async () => {
@@ -65,11 +64,7 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <button id="open-menu" className="md:hidden bg-gray-900 hover:bg-gray-800 text-gray-50 p-2 rounded-md aspect-square font-medium transition" onClick={()=>setMenuOpen(true)}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M4 12h16" /><path d="M4 18h16" /><path d="M4 6h16" />
-                </svg>
-            </button>
+           
         </div>
     </nav>
     </>

@@ -1,6 +1,5 @@
 import * as  React from 'react'
 import { useParams } from 'react-router-dom';
-import { dummyProjects } from '../assets/assets';
 import { Loader2Icon } from 'lucide-react';
 import type { Project, Version } from '../types';
 import ProjectPreview from '../components/ProjectPreview';
