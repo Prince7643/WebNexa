@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Outfit:wght@100..900&display=swap');
+@import "@daveyplate/better-auth-ui/css";
+*{
+  font-family: "outfit", sans-serif;
+}
+@import "tailwindcss";
+
+@layer base {
+  button {
+    @apply cursor-pointer;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes fade-in {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.animate-fade-in {
+  animation: fade-in 0.5s ease-in-out;
+}
+
